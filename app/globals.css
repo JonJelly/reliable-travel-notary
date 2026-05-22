@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --navy: #0a1628;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --cream: #f8f4ee;
+  --warm-white: #fdfbf8;
+  --slate: #4a5568;
+  --accent: #1a3a5c;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--warm-white);
+  color: var(--navy);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+
+.gold-text { color: var(--gold); }
+.navy-bg { background: var(--navy); }
+.cream-bg { background: var(--cream); }
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 2px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(201,168,76,0.35);
+}
+
+.btn-outline {
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  font-weight: 500;
+  padding: 13px 30px;
+  border-radius: 2px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-outline:hover { background: var(--gold); color: var(--navy); }
+
+.section-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.divider-gold {
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+  margin: 16px 0 24px;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.7s ease forwards; }
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s; }
+.delay-3 { animation-delay: 0.45s; }
+
+.hover-card {
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.hover-card:hover {
+  box-shadow: 0 12px 40px rgba(10,22,40,0.12) !important;
+  transform: translateY(-3px) !important;
+  border-color: var(--gold) !important;
+}
+.footer-link:hover { color: var(--gold) !important; }
