@@ -37,7 +37,6 @@ export default function BookPage() {
                   <option>Select a service</option>
                   <option>General Notarization</option>
                   <option>Apostille Service</option>
-                  <option>Immigration / USCIS Notary</option>
                   <option>Power of Attorney</option>
                   <option>Loan Signing</option>
                   <option>Hospital / Care Facility Visit</option>

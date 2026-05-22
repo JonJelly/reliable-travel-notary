@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 const services = [
   { icon: "🔏", title: "General Notary", href: "/services", desc: "Document notarization for personal and business needs — I travel to your location anywhere in LA County." },
   { icon: "🌐", title: "Apostille Services", href: "/apostille-services", desc: "International document authentication for use in foreign countries, handled start to finish." },
-  { icon: "🏛️", title: "Immigration / USCIS", href: "/immigration-uscis-notary", desc: "Specialized notarization for USCIS forms, affidavits, and immigration-related documents." },
   { icon: "📜", title: "Powers of Attorney", href: "/powers-of-attorney", desc: "Properly executed powers of attorney for healthcare, financial, and legal decisions." },
 ];
 

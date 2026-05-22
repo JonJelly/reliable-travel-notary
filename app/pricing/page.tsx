@@ -14,7 +14,6 @@ export default function PricingPage() {
     { name: "Mobile Travel Fee", price: "Varies", note: "Based on distance from service area" },
     { name: "Apostille Facilitation", price: "Call for quote", note: "Includes state filing fees" },
     { name: "Power of Attorney Package", price: "Call for quote", note: "Includes preparation assistance" },
-    { name: "Immigration / USCIS Notarization", price: "Call for quote", note: "Based on document count" },
     { name: "Hospital / Care Facility Visit", price: "Call for quote", note: "Travel fee may apply" },
   ];
 

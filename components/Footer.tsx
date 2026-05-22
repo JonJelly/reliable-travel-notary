@@ -3,7 +3,6 @@ import Link from "next/link";
 const services = [
   { label: "General Notary Services", href: "/services" },
   { label: "Apostille Services", href: "/apostille-services" },
-  { label: "Immigration / USCIS Notary", href: "/immigration-uscis-notary" },
   { label: "Powers of Attorney", href: "/powers-of-attorney" },
 ];
 const info = [

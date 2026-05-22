@@ -5,7 +5,6 @@ import Link from "next/link";
 const navLinks = [
   { label: "Services", href: "/services" },
   { label: "Apostille", href: "/apostille-services" },
-  { label: "Immigration", href: "/immigration-uscis-notary" },
   { label: "Powers of Attorney", href: "/powers-of-attorney" },
   { label: "Pricing", href: "/pricing" },
   { label: "FAQ", href: "/faq" },
