@@ -14,7 +14,7 @@ export default function PrivacyPage() {
           <h2 style={{ fontFamily: "'Playfair Display', serif", color: "var(--navy)", fontSize: "1.3rem", margin: "32px 0 16px" }}>How I Use Your Information</h2>
           <p style={{ marginBottom: 16 }}>Your information is used solely to schedule and provide notary services, communicate with you about appointments, and comply with legal obligations. Document details and personal information shared during notarizations are kept strictly confidential.</p>
           <h2 style={{ fontFamily: "'Playfair Display', serif", color: "var(--navy)", fontSize: "1.3rem", margin: "32px 0 16px" }}>Contact</h2>
-          <p>If you have questions about this privacy policy, contact me at info@reliabletravelnotary.com or (818) 555-0100.</p>
+          <p>If you have questions about this privacy policy, contact me at jgeli@reliabletravelnotary.com or 818-726-3039.</p>
         </div>
       </section>
     </>

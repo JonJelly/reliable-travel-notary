@@ -16,7 +16,7 @@ export default function PaymentPage() {
                 <div key={m} style={{ padding: "12px 16px", background: "var(--cream)", borderRadius: 4, color: "var(--navy)", fontSize: "0.9rem", fontWeight: 500 }}>{m}</div>
               ))}
             </div>
-            <p style={{ color: "var(--slate)", fontSize: "0.875rem", marginTop: 28 }}>Questions about your bill? Call or text me at <strong style={{ color: "var(--navy)" }}>(818) 555-0100</strong></p>
+            <p style={{ color: "var(--slate)", fontSize: "0.875rem", marginTop: 28 }}>Questions about your bill? Call or text me at <strong style={{ color: "var(--navy)" }}>818-726-3039</strong></p>
           </div>
         </div>
       </section>

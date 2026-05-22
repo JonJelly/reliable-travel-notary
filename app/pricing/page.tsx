@@ -1,24 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+
 export const metadata: Metadata = {
-  title: "Notary Pricing",
-  description: "Transparent pricing for mobile notary services in Los Angeles. No hidden fees. Contact me for a custom quote.",
+  title: "Notary Pricing | Jonathan Geli",
+  description: "Transparent pricing for mobile notary services in Los Angeles and the San Fernando Valley. No hidden fees. Call Jonathan at 818-726-3039 for a custom quote.",
 };
+
 export default function PricingPage() {
   const services = [
     { name: "Document Notarization (per signature)", price: "$15", note: "California state maximum" },
     { name: "Loan Signing (standard package)", price: "$150–$200", note: "Depends on document complexity" },
     { name: "Mobile Travel Fee", price: "Varies", note: "Based on distance from service area" },
     { name: "Apostille Facilitation", price: "Call for quote", note: "Includes state filing fees" },
-    { name: "Certified Translation", price: "Call for quote", note: "Priced per page" },
-    { name: "Live Scan Fingerprinting", price: "$25 (rolling fee)", note: "Plus applicable DOJ/FBI fees" },
     { name: "Power of Attorney Package", price: "Call for quote", note: "Includes preparation assistance" },
-    { name: "Wedding Officiant", price: "Starting at $200", note: "Includes ceremony customization" },
+    { name: "Immigration / USCIS Notarization", price: "Call for quote", note: "Based on document count" },
+    { name: "Hospital / Care Facility Visit", price: "Call for quote", note: "Travel fee may apply" },
   ];
+
   return (
     <>
-      <PageHeader tag="Transparent Pricing" title="Service Pricing" subtitle="Straightforward pricing with no hidden fees. California law caps notary fees at $15 per notarized signature. Contact me for a custom quote on any service." />
+      <PageHeader tag="Transparent Pricing" title="Service Pricing" subtitle="Straightforward pricing with no hidden fees. California law caps notary fees at $15 per notarized signature. Call Jonathan for a custom quote on any service." />
       <section style={{ padding: "72px 24px", background: "var(--warm-white)" }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
           <div style={{ background: "#fff", border: "1px solid rgba(10,22,40,0.08)", borderRadius: 4, overflow: "hidden" }}>
@@ -35,17 +37,19 @@ export default function PricingPage() {
               </div>
             ))}
           </div>
-          <div style={{ background: "var(--cream)", borderRadius: 4, padding: "28px", border: "1px solid rgba(201,168,76,0.2)", marginTop: 28, marginBottom: 40 }}>
+
+          <div style={{ background: "var(--cream)", borderRadius: 4, padding: "24px", border: "1px solid rgba(201,168,76,0.2)", marginTop: 24, marginBottom: 40 }}>
             <p style={{ color: "var(--slate)", fontSize: "0.9rem", lineHeight: 1.75 }}>
-              <strong style={{ color: "var(--navy)" }}>Note:</strong> California Notary Public fees are regulated by state law at a maximum of $15 per notarized signature. Travel fees are separate and depend on your location relative to my service base in Burbank/North Hollywood. I'll always provide a clear total before your appointment.
+              <strong style={{ color: "var(--navy)" }}>Note:</strong> California Notary Public fees are regulated by state law at a maximum of $15 per notarized signature. Travel fees depend on your location. Jonathan will always give you a clear total before your appointment — no surprises.
             </p>
           </div>
+
           <div style={{ background: "var(--navy)", borderRadius: 4, padding: "40px", textAlign: "center" }}>
             <h3 style={{ fontFamily: "'Playfair Display', serif", color: "var(--gold)", fontSize: "1.4rem", marginBottom: 12 }}>Get an Exact Quote</h3>
-            <p style={{ color: "rgba(255,255,255,0.7)", marginBottom: 24 }}>Contact me with the details of your service need and I'll provide a transparent, upfront quote.</p>
+            <p style={{ color: "rgba(255,255,255,0.7)", marginBottom: 24 }}>Contact Jonathan with your service details for a transparent, upfront quote.</p>
             <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-              <Link href="/contact-us" className="btn-primary">Contact Me</Link>
-              <Link href="/book-appointment" className="btn-outline">Book Now</Link>
+              <a href="tel:8187263039" className="btn-primary">📞 818-726-3039</a>
+              <Link href="/contact-us" className="btn-outline">Send a Message</Link>
             </div>
           </div>
         </div>
