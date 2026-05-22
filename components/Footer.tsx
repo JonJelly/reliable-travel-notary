@@ -8,6 +8,7 @@ const services = [
 const info = [
   { label: "About Me", href: "/about-us" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Blog & Tips", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact-us" },
   { label: "Book Appointment", href: "/book-appointment" },

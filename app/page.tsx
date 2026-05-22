@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Reliable Travel Notary | Mobile Notary Los Angeles & San Fernando Valley",
@@ -36,6 +37,7 @@ const laAreas = [
 ];
 
 export default function Home() {
+  const recentPosts = getAllPosts().slice(0, 3);
   return (
     <>
       {/* HERO */}
@@ -174,6 +176,35 @@ export default function Home() {
           <div style={{ textAlign: "center", marginTop: 40 }}>
             <p style={{ color: "var(--slate)", fontSize: "0.9rem", marginBottom: 20 }}>Don't see your city? Call me — I travel throughout all of LA County.</p>
             <a href="tel:8187263039" className="btn-primary">📞 Call 818-726-3039</a>
+          </div>
+        </div>
+      </section>
+
+
+      {/* BLOG PREVIEW */}
+      <section style={{ padding: "80px 24px", background: "var(--cream)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 40, flexWrap: "wrap", gap: 16 }}>
+            <div>
+              <span className="section-tag">Blog & Resources</span>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "clamp(1.8rem, 3vw, 2.4rem)", color: "var(--navy)" }}>Notary Tips & Insights</h2>
+            </div>
+            <Link href="/blog" style={{ color: "var(--gold)", fontWeight: 600, fontSize: "0.85rem", letterSpacing: "0.06em", textTransform: "uppercase", textDecoration: "none" }}>View All Articles →</Link>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 24 }}>
+            {recentPosts.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} style={{ textDecoration: "none" }}>
+                <div className="hover-card" style={{ background: "#fff", border: "1px solid rgba(10,22,40,0.08)", borderRadius: 4, padding: "28px 24px", height: "100%", display: "flex", flexDirection: "column" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 14 }}>
+                    <span style={{ background: "var(--navy)", color: "var(--gold)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "3px 10px", borderRadius: 2 }}>{post.category}</span>
+                    <span style={{ color: "var(--slate)", fontSize: "0.78rem" }}>{post.date}</span>
+                  </div>
+                  <h3 style={{ fontFamily: "'Playfair Display', serif", color: "var(--navy)", fontSize: "1.05rem", lineHeight: 1.4, marginBottom: 10, flex: 1 }}>{post.title}</h3>
+                  <p style={{ color: "var(--slate)", fontSize: "0.85rem", lineHeight: 1.7, marginBottom: 16 }}>{post.excerpt}</p>
+                  <span style={{ color: "var(--gold)", fontWeight: 600, fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>Read Article →</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

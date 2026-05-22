@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Apostille", href: "/apostille-services" },
   { label: "Powers of Attorney", href: "/powers-of-attorney" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "About", href: "/about-us" },
 ];
@@ -23,7 +24,7 @@ export default function Navbar() {
           </div>
         </Link>
 
-        <nav style={{ display: "flex", gap: 28, alignItems: "center" }} className="hidden-mobile">
+        <nav style={{ display: "flex", gap: 24, alignItems: "center" }} className="hidden-mobile">
           {navLinks.map(l => (
             <Link key={l.href} href={l.href} style={{ color: "rgba(255,255,255,0.8)", textDecoration: "none", fontSize: "0.85rem", letterSpacing: "0.04em", fontFamily: "'DM Sans', sans-serif", fontWeight: 400, transition: "color 0.2s" }}
               onMouseEnter={e => (e.currentTarget.style.color = "var(--gold)")}
@@ -51,7 +52,7 @@ export default function Navbar() {
       )}
 
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 860px) {
           .hidden-mobile { display: none !important; }
           .mobile-menu-btn { display: flex !important; }
         }
