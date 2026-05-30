@@ -4,6 +4,8 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Powers of Attorney Notarization",
   description: "Professional notarization of powers of attorney documents in Los Angeles. I come to your home, hospital, or office for convenient, compassionate service.",
+  alternates: { canonical: "https://reliabletravelnotary.com/powers-of-attorney/" },
+  robots: { index: true, follow: true },
 };
 export default function PowersPage() {
   return (

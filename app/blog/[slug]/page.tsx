@@ -15,6 +15,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${post.title} | Reliable Travel Notary`,
     description: post.excerpt,
+    alternates: { canonical: `https://reliabletravelnotary.com/blog/${slug}/` },
+    robots: { index: true, follow: true },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      authors: ["Jonathan Geli"],
+    },
   };
 }
 

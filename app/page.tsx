@@ -4,7 +4,9 @@ import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Reliable Travel Notary | Mobile Notary Los Angeles & San Fernando Valley",
-  description: "Jonathan Geli — professional mobile notary serving all of Los Angeles & the San Fernando Valley. I come to you 7 days a week. Call 818-726-3039.",
+  description: "Jonathan Geli — certified mobile notary public serving Los Angeles & the San Fernando Valley. I come to you 7 days a week. Same-day appointments available. Call 818-726-3039.",
+  alternates: { canonical: "https://reliabletravelnotary.com/" },
+  robots: { index: true, follow: true },
 };
 
 const services = [

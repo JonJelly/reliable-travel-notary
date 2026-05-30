@@ -6,6 +6,8 @@ import { getAllPosts } from "@/lib/posts";
 export const metadata: Metadata = {
   title: "Notary Blog & Tips | Jonathan Geli",
   description: "Helpful articles about notary services, apostilles, powers of attorney, and more — from Jonathan Geli, mobile notary serving Los Angeles and the San Fernando Valley.",
+  alternates: { canonical: "https://reliabletravelnotary.com/blog/" },
+  robots: { index: true, follow: true },
 };
 
 const categoryColors: Record<string, string> = {

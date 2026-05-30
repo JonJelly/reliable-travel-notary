@@ -5,6 +5,8 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Apostille Services Los Angeles",
   description: "Professional apostille services in Los Angeles. I authenticate California-issued documents for international use. Fast, accurate, and handled personally from start to finish.",
+  alternates: { canonical: "https://reliabletravelnotary.com/apostille-services/" },
+  robots: { index: true, follow: true },
 };
 
 export default function ApostillePage() {

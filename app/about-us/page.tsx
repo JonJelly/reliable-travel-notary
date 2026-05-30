@@ -5,6 +5,8 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "About Jonathan Geli | Reliable Travel Notary",
   description: "Learn about Jonathan Geli, a certified mobile notary public serving Los Angeles and the San Fernando Valley. Professional, reliable, and available 7 days a week.",
+  alternates: { canonical: "https://reliabletravelnotary.com/about-us/" },
+  robots: { index: true, follow: true },
 };
 
 export default function AboutPage() {

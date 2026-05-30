@@ -5,6 +5,8 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Notary Pricing | Jonathan Geli",
   description: "Transparent pricing for mobile notary services in Los Angeles and the San Fernando Valley. No hidden fees. Call Jonathan at 818-726-3039 for a custom quote.",
+  alternates: { canonical: "https://reliabletravelnotary.com/pricing/" },
+  robots: { index: true, follow: true },
 };
 
 export default function PricingPage() {

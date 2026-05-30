@@ -4,6 +4,8 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Contact Jonathan Geli | Reliable Travel Notary",
   description: "Contact Jonathan Geli at Reliable Travel Notary. Call 818-726-3039 or email jgeli@reliabletravelnotary.com. Available 7 days a week throughout Los Angeles.",
+  alternates: { canonical: "https://reliabletravelnotary.com/contact-us/" },
+  robots: { index: true, follow: true },
 };
 
 export default function ContactPage() {

@@ -4,6 +4,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description: "Answers to common questions about mobile notary services, apostilles, live scan fingerprinting, and what to expect when booking with Reliable Travel Notary.",
+  alternates: { canonical: "https://reliabletravelnotary.com/faq/" },
+  robots: { index: true, follow: true },
 };
 const faqs = [
   { q: "What is a mobile notary?", a: "A mobile notary is a licensed Notary Public who travels to clients rather than requiring them to come to an office. I come to your home, hospital, workplace, or any other convenient location to notarize your documents." },

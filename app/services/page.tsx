@@ -4,7 +4,9 @@ import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
   title: "Mobile Notary Services | Jonathan Geli",
-  description: "Professional mobile notary services in Los Angeles and the San Fernando Valley. Jonathan Geli comes to you for notarizations, apostilles, loan signings, immigration documents, and powers of attorney.",
+  description: "Professional mobile notary services in Los Angeles and the San Fernando Valley. Jonathan Geli comes to you for notarizations, apostilles, loan signings, and powers of attorney.",
+  alternates: { canonical: "https://reliabletravelnotary.com/services/" },
+  robots: { index: true, follow: true },
 };
 
 const services = [

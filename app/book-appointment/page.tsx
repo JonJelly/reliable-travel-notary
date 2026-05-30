@@ -5,6 +5,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Book an Appointment | Jonathan Geli",
   description: "Book your mobile notary appointment with Jonathan Geli. Serving Los Angeles, San Fernando Valley, and surrounding areas — 7 days a week. Call 818-726-3039.",
+  alternates: { canonical: "https://reliabletravelnotary.com/book-appointment/" },
+  robots: { index: true, follow: true },
 };
 
 export default function BookPage() {
